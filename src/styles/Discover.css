@@ -1,0 +1,213 @@
+/* Discover navbar */
+.discover-navbar {
+  min-height: 82px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  background: #0d0d0d;
+  border-bottom: 1px solid #ffffff18;
+}
+
+.discover-brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.discover-brand span,
+.hero-section h1 em,
+.collection-quote em {
+  color: #c56a7d;
+}
+
+.discover-actions {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.discover-actions a,
+.eyebrow,
+.secondary-link,
+.hero-footer,
+.primary-button {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.discover-signin {
+  padding: 13px 18px;
+  border: 1px solid #ffffff45;
+}
+
+/* Hero */
+.hero-section {
+  min-height: 650px;
+  padding: 120px 10% 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background:
+    radial-gradient(ellipse at 80% 35%, #6e263625, transparent 45%),
+    linear-gradient(135deg, #171717, #0d0d0d 65%);
+}
+
+.eyebrow {
+  color: #c56a7d;
+  margin: 0 0 28px;
+}
+
+.hero-section h1 {
+  margin: 0;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(64px, 9vw, 112px);
+  font-weight: 400;
+  letter-spacing: -2px;
+  line-height: 0.98;
+}
+
+.hero-description {
+  max-width: 440px;
+  margin: 28px 0;
+  color: #b6b0a7;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.primary-button {
+  padding: 17px 22px;
+  background: #f4f0e8;
+  color: #171717;
+  border: 1px solid #f4f0e8;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.primary-button:hover {
+  background: #c56a7d;
+  border-color: #c56a7d;
+  color: #fff;
+}
+
+.hero-footer {
+  width: 100%;
+  margin-top: auto;
+  padding-top: 48px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: #777168;
+  font-size: 9px;
+}
+
+/* Combined black quote and collection section */
+.media-showcase {
+  padding: 80px 10%;
+  background: #171717;
+}
+
+.collection-quote {
+  margin: 0 0 24px;
+  color: #f4f0e8;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(48px, 7vw, 78px);
+  font-weight: 400;
+  letter-spacing: -2px;
+  line-height: 0.98;
+}
+
+.collection-description {
+  max-width: 520px;
+  margin: 0 0 48px;
+  color: #b6b0a7;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+/* Footer */
+.site-footer {
+  padding: 32px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  border-top: 1px solid #ffffff18;
+}
+
+.site-footer p,
+.site-footer > span {
+  color: #8c867d;
+  font-size: 12px;
+}
+
+/* Responsive layout */
+@media (max-width: 760px) {
+  .discover-navbar {
+    padding: 18px 6%;
+  }
+
+  .discover-actions {
+    gap: 14px;
+  }
+
+  .discover-actions a {
+    font-size: 9px;
+  }
+
+  .hero-section {
+    min-height: 590px;
+    padding: 100px 7% 24px;
+  }
+
+  .hero-section h1 {
+    font-size: clamp(58px, 14vw, 82px);
+  }
+
+  .hero-footer {
+    font-size: 8px;
+  }
+
+  .media-showcase {
+    padding: 60px 7%;
+  }
+
+  .media-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .site-footer {
+    padding: 28px 7%;
+  }
+}
+
+.media-card-image {
+  display: block;
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 600px) {
+  .media-card-image {
+    height: 300px;
+  }
+}
