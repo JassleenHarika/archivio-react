@@ -20,5 +20,4 @@ function NotFound() {
     </main>
   )
 }
-
 export default NotFound
